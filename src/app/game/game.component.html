@@ -3,10 +3,9 @@
     <span>Welcome To the Game!</span>
   </mat-toolbar>
 </p>
-
-<div class = "container wrapper">
-  <div class ="row">
-    <div class="border-right left-column col-md-3 card">
+<div class = "container-fluid wrapper">
+  <div class ="row pl-1">
+    <div class="left-column col-md-3 card mr-1">
     <!-- <div *ngIf="joined == false">-->
       <form [formGroup]="userNameForm" (ngSubmit)="addUser()">
         <div class="form-group settings">
@@ -30,7 +29,7 @@
         </table>
       </div>
     </div>
-      <div>
+      <div class='col-md-8 card'>
         <app-board></app-board>
       </div>
   </div>

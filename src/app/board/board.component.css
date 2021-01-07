@@ -1,0 +1,18 @@
+.styled-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: "sans-serif";
+  font-weight: bold;
+  min-width: 400px;
+}
+
+.table-bordered {
+  border: 1px solid #FF8362;
+}
+
+.table-bordered th,
+.table-bordered td {
+  border: 1px solid #FF8362;
+}
+

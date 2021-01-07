@@ -1,4 +1,11 @@
-<div class="grid">
-  <canvas #board class="game-board"></canvas>
-
+<div class="p-1">
+<table class='table table-responsive' *ngIf="board">
+  <tbody>
+  <tr class = "table-bordered styled-table" *ngFor="let data of board; let x = index">
+    <td *ngFor="let cell of data; let y = index" (click)="ClickedCell(x , y)">
+      {{ cell }}
+    </td>
+  </tr>
+  </tbody>
+</table>
 </div>

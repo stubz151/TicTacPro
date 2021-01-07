@@ -9,7 +9,8 @@ import {BoardService} from '../services/boardService';
 })
 export class BoardComponent implements OnInit {
   @Input()
-  board?: number[][];
+  board?: string[][];
+
   constructor(private service: BoardService) {
   }
 
@@ -17,5 +18,13 @@ export class BoardComponent implements OnInit {
     if (!this.board) {
       this.board = this.service.getEmptyBoard();
     }
+  }
+
+  ClickedCell(x: number, y: number): boolean {
+    console.log(x,y);
+    if (this.service.allowedMove(x, y, this.board)) {
+      this.service.makeMove(x, y);
+    }
+    return false;
   }
 }

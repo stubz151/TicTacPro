@@ -1,4 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;  background-color: #861657;
+  background-image: linear-gradient(326deg, #861657 0%, #ffa69e 74%);
+}
+
+
+.wrapper{
+  box-sizing: border-box;
+
+  margin-top: 1px;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  background-color: rgba(66, 135, 245,0.3);
+
+}
+
+.margin-top {
+  margin-top: 10px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  background-color: rgba(66, 135, 245,0.6);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
