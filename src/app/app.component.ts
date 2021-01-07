@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Guid} from 'guid-typescript';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Game';
+
+  GenRoomId(){
+    return Guid.create();
+  }
 }
